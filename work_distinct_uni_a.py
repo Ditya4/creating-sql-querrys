@@ -32,7 +32,7 @@ fout = open('d:/python/double_dno/make_list_for_sql_in_function/distinct_uni_a_n
 
 print(pre_querry, file=fout, end='')
 print(filter_in_querry, 'in(', file=fout)
-max_len = 0
+max_len = 0 # looks like this variable is not necessary 
 # cause in sql navigator max size of list in operator in could be 1000
 if len(set_uni_a) >= 999:
     erased_items_file = open('d:/python/double_dno/make_list_for_sql_in_function/erased_numbers.txt', 'w')
